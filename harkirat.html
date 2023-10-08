@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVOCATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>      
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style> 
+/* body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+} */
+
+body {
+    cursor: pointer;
+    background: url(advback.png);
+}
+.contain{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: black;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+.fade-carousel { 
+ position: relative; 
+ height: 100vh; 
+} 
+.fade-carousel .carousel-inner .item { 
+
+ height: 100vh; 
+} 
+.fade-carousel .carousel-indicators > li 
+{
+margin: 0 2px; 
+background-color: #f39c12; 
+ border-color: #f39c12; 
+ opacity: .7; 
+} 
+.hero
+{ 
+ position: absolute; 
+ top: 50%; 
+ left: 50%; 
+ z-index: 3; 
+ color: #fff; 
+ text-align: center; 
+ text-transform: uppercase; 
+ text-shadow: 1px 1px 0 rgba(0,0,0,.75); 
+ -webkit-transform: translate3d(-50%,-50%,0); 
+ -moz-transform: translate3d(-50%,-50%,0); 
+ -ms-transform: translate3d(-50%,-50%,0); -o-transform: translate3d(-50%,-50%,0); 
+ transform: translate3d(-50%,-50%,0); 
+} 
+.hero h1 { 
+ font-size: 70px; 
+ font-weight: bold; 
+ margin: 0; 
+ padding: 0; 
+} 
+.fade-carousel .carousel-inner .item .hero { 
+ opacity: 0; 
+ -webkit-transition: 2s all ease-in-out .1s; 
+ -moz-transition: 2s all ease-in-out .1s; 
+ -ms-transition: 2s all ease-in-out .1s; transition: 2s all ease-in-out .1s; 
+ transition: 2s all ease-in-out .1s; 
+} 
+.fade-carousel .carousel-inner .item.active .hero { 
+ opacity: 1; 
+ -webkit-transition: 2s all ease-in-out .1s; -moz-transition: 2s all ease-in-out .1s; 
+ -ms-transition: 2s all ease-in-out .1s; transition: 2s all ease-in-out .1s; 
+ transition: 2s all ease-in-out .1s; 
+} 
+.overlay 
+{ 
+ position: absolute; 
+ width: 100%; 
+ height: 100%; 
+ z-index: 2; 
+ background-color: #080d15; 
+ opacity: .7; 
+} 
+.fade-carousel .slides .slide-1 
+{ 
+ height: 100vh; 
+ background-size: cover; 
+ background-position: center center; 
+ background-repeat: no-repeat; 
+} 
+
+.card-row {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px,3fr)); 
+grid-gap: 3rem;
+margin: 4rem 5vw;
+padding: 0;
+list-style-type: none; 
+}
+.card {
+border: 2px solid #ccc;
+border-radius: 25px;
+padding: 20px;
+height: 550px;
+width: 400px;
+color: black;
+}
+
+.services {
+  padding: 60px 0;
+}
+
+.service-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-item i {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.service-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark ml-auto">
+        <a href="" class="navbar-brand">Adv.Harkirat Singh</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbaraid">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbaraid">
+            <ul class="navbar-nav text-center ml-auto">
+                <li class="nav-item">
+                    <a href="#logo"><img src="WhatsApp Image 2023-08-08 at 17.19.35.jpeg" alt="logo" height="30px" width="30px"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#About" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<section id="home">
+ <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bscarousel"> 
+ <div class="overlay"></div> 
+ <div class="carousel-inner"> 
+ <div class="item slides active">   <img src="WhatsApp Image 2023-09-14 at 22.50.36 (1).jpeg" alt="error" height="100%;" width="100%">
+ <div class="hero"> 
+ <hgroup>
+    <h1>Welcome to the Law Firm</h1>
+    As a Lawyer,I can assure you that a lot of document drafting is repetive,involving cutting and pasting.
+                                  But the best lawyer bring a unique perspective to the process and anticipate clients's problem.
+ </hgroup>
+ </div>
+</div>
+</div>
+</div>
+</div>
+  </section>
+    <section id="About">
+                <div class="card-row">
+                <div class="card">
+                <img src="WhatsApp Image 2023-09-22 at 17.36.33.jpeg" alt="error" height="400px;">
+                <div class="card-title">About Me</div>
+                <div class="card-content">Adv.Harkirat Singh <br> Providing legal services since 2017
+                </div>   
+                </div>
+
+                            <div class="card">
+                                <img src="WhatsApp Image 2023-10-07 at 20.48.21.jpeg" alt="error" height="400px;">
+                                <div class="card-title">About Me</div>
+                                <div class="card-content">
+                                  Fight for Justice. <br>
+                                  For the lawyer, everything in life looks like a case.
+                                </div>
+                                </div>
+
+                                <div class="card">
+                                  <img src="hark.jpg" alt="error" height="400px;">
+                                  <div class="card-title">About Me</div>
+                                  <div class="card-content">
+                                  A good Lawyer never gives up, until he wants to,or until he gets what he wants.
+                                  </div>
+                                  </div>
+                    </section>
+
+    <section id="Services" style="height: 750px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-item">
+                <i class="fa fa-code"></i>
+                <h3>Criminal Defense</h3>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc tincidunt laoreet.</p> -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <i class="fa fa-mobile"></i>
+                <h3>Civil Defence</h3>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc tincidunt laoreet.</p> -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <i class="fa fa-desktop"></i>
+                <h3>Family Disputes</h3>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc tincidunt laoreet.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<button class="btn" style="outline: auto; width: 100%" >
+    <section id="Contact">
+        <div class="contain" style="display: flow-root;" >
+            <h1>Contact Us</h1>
+            <p>Punjab and Haryana High Court <br> District Court ,Amritsar, Punjab.</p>
+            <a href="mailto:advharkiratsingh9@gmail.com">advharkiratsingh9@gmail.com</a>
+            <p>76968-08008</p>
+        </div>
+    </section>
+</button>
+
+
+
+    <footer>
+        <p>&copy; By-gurn00rkaur</p>
+    </footer>
+</body>
+</html>
